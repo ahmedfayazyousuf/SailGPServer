@@ -18,11 +18,7 @@ const userSchema = new mongoose.Schema({
         required: true
     },
     month: {
-        type: Number,
-        required: true
-    },
-    year: {
-        type: Number,
+        type: String,
         required: true
     },
     timetaken: {
