@@ -23,7 +23,7 @@ router.get('/getAll', async (req, res) => {
 
 router.get('/getAllTime', async (req, res) => {
     try{
-        const data = await User.find();
+        const data = await User.find().sort({ date: -1 });
         res.json(data)
     }
     catch(error){
