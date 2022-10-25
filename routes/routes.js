@@ -21,6 +21,16 @@ router.get('/getAll', async (req, res) => {
     }
 })
 
+router.get('/getAllTime', async (req, res) => {
+    try{
+        const data = await User.find().limit(10);;
+        res.json(data)
+    }
+    catch(error){
+        res.status(500).json({message: error.message})
+    }
+})
+
 //Get by ID Method
 router.get('/getOne/:id', (req, res) => {
     res.send('Get by ID API')
