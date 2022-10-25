@@ -23,7 +23,7 @@ router.get('/getAll', async (req, res) => {
 
 router.get('/getAllTime', async (req, res) => {
     try{
-        const data = await User.find().limit(10);;
+        const data = await User.find();
         res.json(data)
     }
     catch(error){
