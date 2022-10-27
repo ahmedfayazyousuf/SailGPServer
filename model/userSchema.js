@@ -29,16 +29,16 @@ const userSchema = new mongoose.Schema({
         type: Number,
         default: 0,
     },
-    age: {
+    checkone: {
         type: Boolean,
         default: false,
 
     },
-    consent: {
+    checktwo: {
         type: Boolean,
         default: false,
     },
-    dataa: {
+    checkthree: {
         type: Boolean,
         default: false,
     }
