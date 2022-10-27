@@ -37,6 +37,10 @@ const userSchema = new mongoose.Schema({
     consent: {
         type: Boolean,
         default: false,
+    },
+    dataa: {
+        type: Boolean,
+        default: false,
     }
 },
     {
