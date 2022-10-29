@@ -13,7 +13,7 @@ router.post('/post', (req, res) => {
 //Get all Method
 router.get('/getAll', async (req, res) => {
     try{
-        const data = await User.find().sort({timetaken : 1}).limit(10);;
+        const data = await User.find({"timetaken": {$ne: 0}}).sort({timetaken : 1}).limit(10);;
         res.json(data)
     }
     catch(error){
