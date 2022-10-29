@@ -27,7 +27,7 @@ const userSchema = new mongoose.Schema({
     },
     timetaken: {
         type: Number,
-        default: 0,
+        default: 200,
     },
     checkone: {
         type: Boolean,
