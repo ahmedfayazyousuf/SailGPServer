@@ -16,11 +16,6 @@ router.post('/register', async (req, res) => {
 
     const { name, email, phone, day, month, year, timetaken, checkone, checktwo, checkthree } = req.body;
 
-    if(!name || !email || !phone || !day || !month || !year)
-    {
-        return res.status(422).json({ error: "Please fill all the fields properly" });
-    } 
-
         const user = new User({name, email, phone, day, month, year, timetaken, checkone, checktwo, checkthree });
 
         //hashing
