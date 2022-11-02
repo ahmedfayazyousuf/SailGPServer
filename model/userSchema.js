@@ -9,6 +9,10 @@ const userSchema = new mongoose.Schema({
         type: String,
         required: true 
     },
+    ccode: {
+        type: String,
+        required: true
+    },
     phone: {
         type: Number,
         required: true

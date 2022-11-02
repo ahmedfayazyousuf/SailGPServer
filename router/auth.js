@@ -14,9 +14,9 @@ const User = require("../model/userSchema");
 
 router.post('/register', async (req, res) => {
 
-    const { name, email, phone, day, month, year, timetaken, checkone, checktwo, checkthree } = req.body;
+    const { name, email, ccode, phone, day, month, year, timetaken, checkone, checktwo, checkthree } = req.body;
 
-        const user = new User({name, email, phone, day, month, year, timetaken, checkone, checktwo, checkthree });
+        const user = new User({name, email, ccode, phone, day, month, year, timetaken, checkone, checktwo, checkthree });
 
         //hashing
 
